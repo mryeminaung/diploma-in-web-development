@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #040b30;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(to bottom, #1d275e 70%, #6dd4d4 70%);
+}
+
+.box {
+    border: 1px solid red;
+}
+
+.main-nav {
+    font-size: 18px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-link {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link-item {
+    display: inline-block;
+    margin-right: 50px;
+    font-weight: bold;
+}
+
+.active {
+    color: white !important;
+}
+
+.nav-link-item a {
+    color: #00fff0;
+    text-decoration: none;
+}
+
+.nav-link-item a:hover {
+    color: white;
+}
+
+.nav-btn {
+    text-decoration: none;
+    background-color: #00fff0;
+    border-radius: 25px;
+    padding: 10px 25px;
+}
+
+.hero-content {
+    position: relative;
+    height: 60vh;
+}
+
+.upper {
+    margin: 0 auto;
+    text-align: center;
+    width: 650px;
+    padding-top: 70px;
+}
+
+.upper-title {
+    color: #00fff0;
+    font-size: 35px;
+    margin-bottom: 14px;
+}
+
+.upper-text {
+    font-size: 18px;
+    color: white;
+}
+
+.card {
+    position: relative;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.left-card {
+    position: absolute;
+    margin-left: -540px;
+    color: #00fff0;
+    background-color: #0f172a;
+    border-radius: 10px;
+    padding: 80px 30px;
+    height: 450px;
+    width: 450px;
+}
+
+.left-card-hr {
+    margin: 3px auto 0px;
+    width: 80px;
+    background-color: #ffffff;
+    border: none;
+    height: 2px;
+}
+
+.left-card-text {
+    line-height: 1.5;
+    text-align: center;
+    font-weight: bold;
+}
+
+.left-card-text2 {
+    text-align: center;
+    font-size: 13px;
+}
+
+.text-h2 {
+    margin: 40px auto 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.progress-bar {
+    position: relative;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.progress-circle {
+    position: absolute;
+    left: 48%;
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+}
+
+.progress-hr {
+    width: 100%;
+    height: 3px;
+    border: 1px solid #4b57a3;
+    background-color: #4b57a3;
+}
+
+.bar-text {
+    margin: 0 5px;
+}
+
+.right-card {
+    position: absolute;
+    margin-right: -450px;
+    background-color: #6dd4d4;
+    border-radius: 10px;
+    padding: 100px 30px;
+    height: 550px;
+    width: 550px;
+    box-shadow: 2px 2px 8px #0f172aea;
+}
+
+.right-btn {
+    display: block;
+    background-color: #4b57a3;
+    margin: 0 auto;
+    border: none;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    width: 290px;
+    color: #00fff0;
+}
+
+.right-btn:hover {
+    cursor: pointer;
+}
+
+.right-card-title {
+    display: flex;
+    letter-spacing: 1.2px;
+    justify-content: center;
+    align-items: center;
+}
+
+.dollar {
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 4px;
+}
+
+.dollar + span {
+    color: #2b2828;
+}
+
+.plan {
+    margin: px auto;
+}
+
+.plan-text {
+    margin: 50px auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.plan-hr {
+    width: 100%;
+    border: 1px solid white;
+    background-color: white;
+}
+
+.plan-title {
+    color: #2b2828;
+    position: absolute;
+    letter-spacing: 1.5;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    width: 350px;
+    background-color: #6dd4d4;
+    transform: translate(-50%, -50%);
+}
+
+.plan-list {
+    color: #2b2828;
+    list-style-type: none;
+    display: flex;
+    padding: 20px 30px;
+    row-gap: 35px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.plan-list-item {
+    color: #2b2828;
+    width: 200px;
+}
+
+.plan-list-item i {
+    margin-right: 4px;
+}

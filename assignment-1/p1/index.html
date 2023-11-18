@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Beginner Survey Form</title>
+    </head>
+    <body>
+        <form action="" method="post" id="survey-form" autocomplete="off">
+            <h2 class="survey-title">Beginner Survey Form</h2>
+            <fieldset class="survey-field-1">
+                <legend>Personal Details</legend>
+                <div class="survey-box">
+                    <!-- name -->
+                    <label for="name" class="survey-label">Name: </label>
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Enter your name"
+                    />
+                </div>
+                <br />
+                <div class="survey-box">
+                    <!-- address -->
+                    <label for="address" class="survey-label">Address: </label>
+                    <input
+                        type="text"
+                        name="address"
+                        placeholder="Enter your Address"
+                    />
+                </div>
+                <br />
+                <div class="survey-box">
+                    <!-- email -->
+                    <label for="email" class="survey-label">Email: </label>
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Enter your Email"
+                    />
+                </div>
+                <br />
+                <div class="survey-box">
+                    <!-- number -->
+                    <label for="number" class="survey-label">Number: </label>
+                    <input
+                        type="number"
+                        name="number"
+                        placeholder="Enter your Number"
+                    />
+                </div>
+                <br />
+                <div class="survey-box">
+                    <!-- gender selection -->
+                    <label for="gender">Please select your gender : </label>
+                    <br />
+                    <input type="radio" name="gender" id="male" />
+                    <label for="male">Male</label>
+                    <br />
+                    <input type="radio" name="gender" id="female" />
+                    <label for="female">Female</label>
+                    <br />
+                    <input type="radio" name="gender" id="non-binary" />
+                    <label for="non-binary">Non-binary</label>
+                    <br />
+                    <input type="radio" name="gender" id="prefer-not-to-say" />
+                    <label for="prefer-not-to-say">Prefer not to say</label>
+                </div>
+            </fieldset>
+            <!-- additional information -->
+            <fieldset class="survey-field-2">
+                <legend>Additional Information</legend>
+                <div class="survey-box">
+                    <label for="additional-info" class="info-label"
+                        >Enter Your Background Information</label
+                    >
+                    <textarea
+                        name="additional-info"
+                        id="additional-info"
+                        class="info-box"
+                        placeholder="Enter Your Background Information"
+                    ></textarea>
+                </div>
+            </fieldset>
+            <button type="submit" class="submitBtn">Submit</button>
+        </form>
+    </body>
+</html>

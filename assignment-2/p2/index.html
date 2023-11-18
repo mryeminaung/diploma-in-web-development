@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+		<title>Admin Dashboard</title>
+	</head>
+	<body>
+		<div class="parent">
+			<div class="admin-header">
+				<button class="add-btn">
+					<i class="fa-solid fa-plus fa-sm"></i>
+					Add Admin
+				</button>
+				<div class="page-pagination">
+					<div>
+						page 1: total : 20
+						<p class="pre-next-btn">
+							<span class="pre-btn">
+								<i class="fa-solid fa-angle-left fa-sm"></i>
+							</span>
+							<span class="next-btn">
+								<i class="fa-solid fa-angle-right fa-sm"></i>
+							</span>
+						</p>
+					</div>
+				</div>
+			</div>
+			<table class="user-lists">
+				<thead>
+					<tr class="list-title">
+						<th>id</th>
+						<th>photo</th>
+						<th>login name</th>
+						<th>name</th>
+						<th>email</th>
+						<th>staff own</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>
+							<img src="./imgs/profile.png" alt="profile_pic" class="circle" />
+						</td>
+						<td>US123456789012</td>
+						<td>John Doe</td>
+						<td>john.doe@example.com</td>
+						<td>1</td>
+						<td>
+							<div class="action-btns">
+								<span class="action-icon">
+									<i class="fa-solid fa-address-card fa-lg"></i>
+								</span>
+								<span class="action-icon">
+									<i class="fa-solid fa-pen-to-square fa-lg"></i>
+								</span>
+								<span class="action-icon">
+									<i class="fa-solid fa-trash-can fa-lg"></i>
+								</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>
+							<img src="./imgs/profile.png" alt="profile_pic" class="circle" />
+						</td>
+						<td>ID123456789034</td>
+						<td>Jane Smith</td>
+						<td>jane.smith@example.com</td>
+						<td>2</td>
+						<td>
+							<div class="action-btns">
+								<span class="action-icon">
+									<i class="fa-solid fa-address-card fa-lg"></i>
+								</span>
+								<span class="action-icon">
+									<i class="fa-solid fa-pen-to-square fa-lg"></i>
+								</span>
+								<span class="action-icon">
+									<i class="fa-solid fa-trash-can fa-lg"></i>
+								</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>
+							<img src="./imgs/profile.png" alt="profile_pic" class="circle" />
+						</td>
+						<td>SG123456789056</td>
+						<td>Michael Johnson</td>
+						<td>michael.johnson@example.com</td>
+						<td>3</td>
+						<td>
+							<div class="action-btns">
+								<span class="action-icon">
+									<i class="fa-solid fa-address-card fa-lg"></i>
+								</span>
+								<span class="action-icon">
+									<i class="fa-solid fa-pen-to-square fa-lg"></i>
+								</span>
+								<span class="action-icon">
+									<i class="fa-solid fa-trash-can fa-lg"></i>
+								</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>
+							<img src="./imgs/profile.png" alt="profile_pic" class="circle" />
+						</td>
+						<td>US123456789078</td>
+						<td>Emily Brown</td>
+						<td>emily.brown@example.com</td>
+						<td>4</td>
+						<td>
+							<div class="action-btns">
+								<span class="action-icon">
+									<i class="fa-solid fa-address-card fa-lg"></i>
+								</span>
+								<span class="action-icon">
+									<i class="fa-solid fa-pen-to-square fa-lg"></i>
+								</span>
+								<span class="action-icon">
+									<i class="fa-solid fa-trash-can fa-lg"></i>
+								</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>
+							<img src="./imgs/profile.png" alt="profile_pic" class="circle" />
+						</td>
+						<td>ID123456789090</td>
+						<td>William Lee</td>
+						<td>william.lee@example.com</td>
+						<td>5</td>
+						<td>
+							<div class="action-btns">
+								<span class="action-icon">
+									<i class="fa-solid fa-address-card fa-lg"></i>
+								</span>
+								<span class="action-icon">
+									<i class="fa-solid fa-pen-to-square fa-lg"></i>
+								</span>
+								<span class="action-icon">
+									<i class="fa-solid fa-trash-can fa-lg"></i>
+								</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>
+							<img src="./imgs/profile.png" alt="profile_pic" class="circle" />
+						</td>
+						<td>SG123456789112</td>
+						<td>Olivia Taylor</td>
+						<td>olivia.taylor@example.com</td>
+						<td>6</td>
+						<td>
+							<div class="action-btns">
+								<span class="action-icon">
+									<i class="fa-solid fa-address-card fa-lg"></i>
+								</span>
+								<span class="action-icon">
+									<i class="fa-solid fa-pen-to-square fa-lg"></i>
+								</span>
+								<span class="action-icon">
+									<i class="fa-solid fa-trash-can fa-lg"></i>
+								</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>
+							<img src="./imgs/profile.png" alt="profile_pic" class="circle" />
+						</td>
+						<td>US123456789134</td>
+						<td>James Wilson</td>
+						<td>james.wilson@example.com</td>
+						<td>7</td>
+						<td>
+							<div class="action-btns">
+								<span class="action-icon">
+									<i class="fa-solid fa-address-card fa-lg"></i>
+								</span>
+								<span class="action-icon">
+									<i class="fa-solid fa-pen-to-square fa-lg"></i>
+								</span>
+								<span class="action-icon">
+									<i class="fa-solid fa-trash-can fa-lg"></i>
+								</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>
+							<img src="./imgs/profile.png" alt="profile_pic" class="circle" />
+						</td>
+						<td>ID123456789156</td>
+						<td>Sophia Anderson</td>
+						<td>sophia.anderson@example.com</td>
+						<td>8</td>
+						<td>
+							<div class="action-btns">
+								<span class="action-icon">
+									<i class="fa-solid fa-address-card fa-lg"></i>
+								</span>
+								<span class="action-icon">
+									<i class="fa-solid fa-pen-to-square fa-lg"></i>
+								</span>
+								<span class="action-icon">
+									<i class="fa-solid fa-trash-can fa-lg"></i>
+								</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td>
+							<img src="./imgs/profile.png" alt="profile_pic" class="circle" />
+						</td>
+						<td>SG123456789178</td>
+						<td>David Martinez</td>
+						<td>david.martinez@example.com</td>
+						<td>9</td>
+						<td>
+							<div class="action-btns">
+								<span class="action-icon">
+									<i class="fa-solid fa-address-card fa-lg"></i>
+								</span>
+								<span class="action-icon">
+									<i class="fa-solid fa-pen-to-square fa-lg"></i>
+								</span>
+								<span class="action-icon">
+									<i class="fa-solid fa-trash-can fa-lg"></i>
+								</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>
+							<img src="./imgs/profile.png" alt="profile_pic" class="circle" />
+						</td>
+						<td>US123456789190</td>
+						<td>Isabella Robinson</td>
+						<td>isabella.robinson@example.com</td>
+						<td>10</td>
+						<td>
+							<div class="action-btns">
+								<span class="action-icon">
+									<i class="fa-solid fa-address-card fa-lg"></i>
+								</span>
+								<span class="action-icon">
+									<i class="fa-solid fa-pen-to-square fa-lg"></i>
+								</span>
+								<span class="action-icon">
+									<i class="fa-solid fa-trash-can fa-lg"></i>
+								</span>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>

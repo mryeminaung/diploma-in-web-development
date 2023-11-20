@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500;700&family=Roboto:wght@400;500;700&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+	font-family: "Roboto Mono", monospace;
+}
+
+.alert-page,
+.form-page,
+.todo-page {
+	display: none;
+}
+
+nav {
+	position: fixed;
+	width: 100%;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+	border: 1px solid rgb(201, 201, 201);
+	border-width: 1px 0;
+}
+
+.nav-link {
+	width: 120px;
+	font-weight: 700;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	padding: 15px;
+	color: #000;
+	border-bottom: 2px solid transparent;
+	transition: all 0.25s ease-in-out;
+}
+
+.nav-link.hover {
+	color: blue;
+	border-bottom-color: blue;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* default page */
+.default-page {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* alert box page */
+.modal {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.25s ease-in-out;
+}
+
+.modal.showModal {
+	background-color: #30303041;
+	visibility: visible;
+	opacity: 0.9;
+}
+
+.modal-dialog {
+	box-shadow: 0 0 3px gray;
+	border-radius: 10px;
+	width: 600px;
+	background-color: #fff;
+}
+
+.dialog-body {
+	padding: 30px 25px;
+}
+
+.dialog-title {
+	font-weight: 700;
+}
+
+.dialog-text {
+	margin: 15px auto;
+	color: #4d4c4c;
+	font-size: 16px;
+}
+
+.open-dialog {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 10px 15px;
+	border-radius: 8px;
+	color: #0000ff;
+	text-align: center;
+	background-color: #d8d8d8;
+	border: none;
+	font-weight: 700;
+	font-size: 17px;
+}
+
+.close-dialog {
+	color: blue;
+	padding: 10px;
+	font-size: 16px;
+	border: none;
+	border-radius: 8px;
+	background-color: #d8d8d8;
+	text-align: center;
+}
+
+.open-dialog:hover,
+.close-dialog:hover {
+	cursor: pointer;
+}
+
+.active {
+	color: blue;
+	border-bottom-color: blue;
+}
+
+/* todo page */
+.todo-form-layout {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	width: 300px;
+	transform: translate(-50%, 0%);
+	padding: 10px;
+}
+
+.todo-title {
+	text-align: center;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+.todo-form-layout input {
+	font-size: 15px;
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid gray;
+}
+
+.todo-form-layout input:focus {
+	outline: none;
+}
+
+.todo-list {
+	list-style-type: none;
+	margin: 20px auto;
+}
+
+.todo-list li {
+	padding: 10px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid gray;
+}
+
+.delete-btn {
+	font-size: 23px;
+	color: red;
+	border-radius: 100%;
+	padding: 1px 5px;
+	background-color: #000;
+	margin-left: 10px;
+	transition: all 0.2s ease-in-out;
+}
+
+.delete-btn:hover {
+	box-shadow: 0 0 3px red;
+	transform: scale(1.1);
+}
+
+.delete-btn:hover {
+	cursor: pointer;
+}
+
+.todo-btn {
+	display: block;
+	padding: 8px 12px;
+	border-radius: 5px;
+	border: none;
+	margin: 10px 0px;
+	background-color: blue;
+	color: #fff;
+}
+
+.todo-btn:hover {
+	cursor: pointer;
+}
+
+.todo-error {
+	color: red;
+	display: none;
+	margin-top: 5px;
+	font-size: 14px;
+}
+
+.divider {
+	display: none;
+	border: none;
+	border-radius: 10px;
+	background: gray;
+	height: 1px;
+	width: 80%;
+	margin: 5px auto 0px;
+}
+
+.divider.showDivider {
+	display: block;
+}
+
+/* form validation page */
+.form-detail {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 350px;
+	border-radius: 5px;
+	box-shadow: 0 0 5px gray;
+}
+
+.form-validate {
+	padding: 25px;
+}
+
+.form-input input {
+	padding: 10px;
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid gray;
+}
+
+.form-title {
+	font-weight: 700;
+}
+
+.form-input {
+	margin: 15px 0;
+}
+
+.form-input input:focus {
+	outline: none;
+}
+
+.form-input label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.form-btn {
+	width: 100%;
+	padding: 8px 0;
+	background-color: blue;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+}
+
+.form-btn:hover {
+	cursor: pointer;
+}
+
+.error {
+	color: red;
+	font-size: 13px;
+	margin-top: 3px;
+	display: none;
+}

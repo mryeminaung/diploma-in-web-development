@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>Assignment 3</title>
+	</head>
+	<body>
+		<nav>
+			<ul class="nav">
+				<li class="nav-item">
+					<a href="#alert-box" class="nav-link alert">Alert Box</a>
+				</li>
+				<li class="nav-item"><a href="#todo" class="nav-link todo">Todo</a></li>
+				<li class="nav-item"><a href="#form" class="nav-link form">Form</a></li>
+			</ul>
+		</nav>
+		<div class="container">
+			<div class="default-page">
+				<h1>Assignment 3</h1>
+			</div>
+
+			<div class="alert-page">
+				<button class="open-dialog">Open dialog</button>
+				<div class="modal">
+					<div class="modal-dialog">
+						<div class="dialog-body">
+							<h3 class="dialog-title">Payment successful</h3>
+							<p class="dialog-text">
+								Your payment has been successfully submitted. We've sent you an email with
+								all of the details of your order.
+							</p>
+							<button class="close-dialog">Got it,thanks!</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="todo-page">
+				<div class="todo-form-layout">
+					<h2 class="todo-title">Todo App</h2>
+					<form method="post" class="todo-form">
+						<input
+							type="text"
+							name="todo-item"
+							id="todo-item"
+							placeholder="Enter new todo"
+						/>
+						<span class="todo-error">Input must be filled!</span>
+						<button class="todo-btn">Add Todo</button>
+					</form>
+					<hr class="divider" />
+					<input
+						type="text"
+						name="search-task"
+						id="search-task"
+						class="search-task"
+						placeholder="Search Todo"
+					/>
+					<ul class="todo-list"></ul>
+				</div>
+			</div>
+
+			<div class="form-page">
+				<div class="form-detail">
+					<form method="post" class="form-validate">
+						<h3 class="form-title">Login</h3>
+						<div class="form-input">
+							<label for="name">Name</label>
+							<input type="text" name="name" id="name" />
+							<span class="error name-error"
+								>Name must include a lowercase letter and a number</span
+							>
+						</div>
+						<div class="form-input">
+							<label for="email">Email</label>
+							<input type="email" name="email" id="email" />
+							<span class="error email-error">Invalid email format</span>
+						</div>
+						<div class="form-input">
+							<label for="password">Password</label>
+							<input type="password" name="password" id="password" />
+							<span class="error pwd-error">Password must be at least 6 characters</span>
+						</div>
+						<div class="form-input">
+							<button class="form-btn">Log In</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script src="./script.js"></script>
+	</body>
+</html>
